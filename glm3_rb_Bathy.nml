@@ -126,7 +126,7 @@
 &time
    timefmt = 2
    start = '2020-01-01 12:00:00'
-   stop ='2020-08-31 12:00:00'
+   stop ='2020-12-31 12:00:00'
    dt = 3600
    num_days = 830
    timezone = -5
@@ -173,7 +173,7 @@
 /
 &inflow
    num_inflows = 1
-   names_of_strms = 'inflow_temp'
+   names_of_strms = 'inflow'
    subm_flag = .false.
    strm_hf_angle = 65
    strmbd_slope = 1.5
@@ -181,7 +181,7 @@
    inflow_factor = 2
    inflow_fl = 'bcs/inflow.csv'
    inflow_varnum = 1
-   inflow_vars = 'FLOW','TEMP'
+   inflow_vars = 'Flow','Temp'
 /
 &outflow
    num_outlet = 1
@@ -189,7 +189,7 @@
    outl_elvs = 402.1
    bsn_len_outl = 799
    bsn_wid_outl = 398
-   outflow_fl = 'bcs/outflow_all.csv'
+   outflow_fl = 'bcs/outflow.csv'
    outflow_factor = 1
 /
 &snowice

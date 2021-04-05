@@ -103,6 +103,11 @@ first.attempt = TRUE # if TRUE, deletes all local csv-files that stores the
 # this supports a split-sample calibration (e.g. calibration and validation period)
 # the ratio value is the ratio of calibration period to validation period, ratio 2 means two parts to calibrationand 1 part to calibration
 print(period)
+
+period$calibration = period$total
+period$validation = period$total
+
+print(period)
 scaling = TRUE       # scaling of the variables in a space of [0,10]; TRUE for CMA-ES
 verbose = TRUE
 method = 'CMA-ES'    # optimization method, choose either `CMA-ES` or `Nelder-Mead`
